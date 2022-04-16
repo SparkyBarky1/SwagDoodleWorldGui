@@ -816,7 +816,7 @@ local function NUTC_fake_script() -- EncounterScripts.MainBattleScript
 			[5] = tostring(script.Parent.TextBox.Text),
 		}
 		printconsole("updated")
-		if args[5] == "..." then
+		if args[5] == "" then
 			printconsole("hi")
 			local args = {
 				[1] = "",
