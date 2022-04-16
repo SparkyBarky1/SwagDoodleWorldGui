@@ -1,8 +1,4 @@
 
--- Made by B1H4H for your convenience :D
-
-
-
 
 -- Instances:
 
@@ -468,7 +464,7 @@ DesignLabel_3.TextSize = 14.000
 
 -- Scripts:
 
-local function MPKLB_fake_script() -- HealButton.HealScript 
+local function UODOUU_fake_script() -- HealButton.HealScript 
 	local script = Instance.new('LocalScript', HealButton)
 
 	function Heal()
@@ -484,8 +480,8 @@ local function MPKLB_fake_script() -- HealButton.HealScript
 	
 	script.Parent.MouseButton1Click:Connect(Heal)
 end
-coroutine.wrap(MPKLB_fake_script)()
-local function NZLBJXH_fake_script() -- RejoinButton.Rejoin 
+coroutine.wrap(UODOUU_fake_script)()
+local function FOID_fake_script() -- RejoinButton.Rejoin 
 	local script = Instance.new('LocalScript', RejoinButton)
 
 	function Heal()
@@ -496,8 +492,8 @@ local function NZLBJXH_fake_script() -- RejoinButton.Rejoin
 	
 	script.Parent.MouseButton1Click:Connect(Heal)
 end
-coroutine.wrap(NZLBJXH_fake_script)()
-local function IAEZ_fake_script() -- AllChestsButton.AllChestScript 
+coroutine.wrap(FOID_fake_script)()
+local function LQVYXQ_fake_script() -- AllChestsButton.AllChestScript 
 	local script = Instance.new('LocalScript', AllChestsButton)
 
 	function Chests()
@@ -511,8 +507,8 @@ local function IAEZ_fake_script() -- AllChestsButton.AllChestScript
 	
 	script.Parent.MouseButton1Click:Connect(Chests)
 end
-coroutine.wrap(IAEZ_fake_script)()
-local function HFWW_fake_script() -- GiveStarter.GiveStarterScript 
+coroutine.wrap(LQVYXQ_fake_script)()
+local function LQOZA_fake_script() -- GiveStarter.GiveStarterScript 
 	local script = Instance.new('LocalScript', GiveStarter)
 
 	function starter()
@@ -532,8 +528,8 @@ local function HFWW_fake_script() -- GiveStarter.GiveStarterScript
 	
 	script.Parent.MouseButton1Click:Connect(starter)
 end
-coroutine.wrap(HFWW_fake_script)()
-local function ZILRE_fake_script() -- GemChests.GemChestScript 
+coroutine.wrap(LQOZA_fake_script)()
+local function ANDAJR_fake_script() -- GemChests.GemChestScript 
 	local script = Instance.new('LocalScript', GemChests)
 
 	function Chests2()
@@ -551,8 +547,8 @@ local function ZILRE_fake_script() -- GemChests.GemChestScript
 	
 	script.Parent.MouseButton1Click:Connect(Chests2)
 end
-coroutine.wrap(ZILRE_fake_script)()
-local function CXNLNA_fake_script() -- MoneyTrainer.MoneyTrainerOverride 
+coroutine.wrap(ANDAJR_fake_script)()
+local function JXMPBV_fake_script() -- MoneyTrainer.MoneyTrainerOverride 
 	local script = Instance.new('LocalScript', MoneyTrainer)
 
 	function run()
@@ -576,8 +572,8 @@ local function CXNLNA_fake_script() -- MoneyTrainer.MoneyTrainerOverride
 	
 	script.Parent.MouseButton1Click:Connect(run)
 end
-coroutine.wrap(CXNLNA_fake_script)()
-local function XRSS_fake_script() -- Frame.Hide ui script 
+coroutine.wrap(JXMPBV_fake_script)()
+local function AFTV_fake_script() -- Frame.Hide ui script 
 	local script = Instance.new('LocalScript', Frame)
 
 	game:GetService("UserInputService").InputBegan:Connect(function(key,isTyping)
@@ -597,8 +593,8 @@ local function XRSS_fake_script() -- Frame.Hide ui script
 	end)
 	
 end
-coroutine.wrap(XRSS_fake_script)()
-local function KCJOVPO_fake_script() -- Route1Encounter.R1Encounter 
+coroutine.wrap(AFTV_fake_script)()
+local function IPME_fake_script() -- Route1Encounter.R1Encounter 
 	local script = Instance.new('LocalScript', Route1Encounter)
 
 	function p()
@@ -628,8 +624,8 @@ local function KCJOVPO_fake_script() -- Route1Encounter.R1Encounter
 	
 	
 end
-coroutine.wrap(KCJOVPO_fake_script)()
-local function AWEW_fake_script() -- Route2Encounter.R2Encounter 
+coroutine.wrap(IPME_fake_script)()
+local function SVELAM_fake_script() -- Route2Encounter.R2Encounter 
 	local script = Instance.new('LocalScript', Route2Encounter)
 
 	function p()	
@@ -659,8 +655,8 @@ local function AWEW_fake_script() -- Route2Encounter.R2Encounter
 	
 	
 end
-coroutine.wrap(AWEW_fake_script)()
-local function DBHSO_fake_script() -- Route3Encounter.R3Encounter 
+coroutine.wrap(SVELAM_fake_script)()
+local function WQPKO_fake_script() -- Route3Encounter.R3Encounter 
 	local script = Instance.new('LocalScript', Route3Encounter)
 
 	function p()
@@ -674,8 +670,8 @@ local function DBHSO_fake_script() -- Route3Encounter.R3Encounter
 	
 	
 end
-coroutine.wrap(DBHSO_fake_script)()
-local function KHOMJHF_fake_script() -- Route4Encounter.R4Encounter 
+coroutine.wrap(WQPKO_fake_script)()
+local function EBPXPN_fake_script() -- Route4Encounter.R4Encounter 
 	local script = Instance.new('LocalScript', Route4Encounter)
 
 	function Encounter()
@@ -696,8 +692,8 @@ local function KHOMJHF_fake_script() -- Route4Encounter.R4Encounter
 	
 	
 end
-coroutine.wrap(KHOMJHF_fake_script)()
-local function SBIPWWO_fake_script() -- LakeEncounter.LakeEncounter 
+coroutine.wrap(EBPXPN_fake_script)()
+local function AKWRQ_fake_script() -- LakeEncounter.LakeEncounter 
 	local script = Instance.new('LocalScript', LakeEncounter)
 
 	function p()
@@ -726,8 +722,8 @@ local function SBIPWWO_fake_script() -- LakeEncounter.LakeEncounter
 	
 	
 end
-coroutine.wrap(SBIPWWO_fake_script)()
-local function IXEA_fake_script() -- SewerEncounter.SewerEncounter 
+coroutine.wrap(AKWRQ_fake_script)()
+local function QVACHQA_fake_script() -- SewerEncounter.SewerEncounter 
 	local script = Instance.new('LocalScript', SewerEncounter)
 
 	function p()
@@ -738,8 +734,8 @@ local function IXEA_fake_script() -- SewerEncounter.SewerEncounter
 	
 	script.Parent.MouseButton1Click:Connect(p)
 end
-coroutine.wrap(IXEA_fake_script)()
-local function SMSEBPC_fake_script() -- GraphiteLodgeEncounter.GraphiteLodgeEncounter 
+coroutine.wrap(QVACHQA_fake_script)()
+local function LZPHN_fake_script() -- GraphiteLodgeEncounter.GraphiteLodgeEncounter 
 	local script = Instance.new('LocalScript', GraphiteLodgeEncounter)
 
 	function p()
@@ -773,8 +769,8 @@ local function SMSEBPC_fake_script() -- GraphiteLodgeEncounter.GraphiteLodgeEnco
 	
 	
 end
-coroutine.wrap(SMSEBPC_fake_script)()
-local function SWFPM_fake_script() -- CrossRoadsEncounter.Cross Roads EncounterScript 
+coroutine.wrap(LZPHN_fake_script)()
+local function QDNEACF_fake_script() -- CrossRoadsEncounter.Cross Roads EncounterScript 
 	local script = Instance.new('LocalScript', CrossRoadsEncounter)
 
 	
@@ -806,8 +802,8 @@ local function SWFPM_fake_script() -- CrossRoadsEncounter.Cross Roads EncounterS
 	
 	
 end
-coroutine.wrap(SWFPM_fake_script)()
-local function SPWE_fake_script() -- EncounterScripts.MainBattleScript 
+coroutine.wrap(QDNEACF_fake_script)()
+local function QQUK_fake_script() -- EncounterScripts.MainBattleScript 
 	local script = Instance.new('LocalScript', EncounterScripts)
 
 	function Encounter(place,terrain)
@@ -822,15 +818,22 @@ local function SPWE_fake_script() -- EncounterScripts.MainBattleScript
 		}
 		
 		if args[5] == "..." then
-			args[5] = nil
+			printconsole("hi")
+			local args = {
+				[1] = "",
+				[2] = "RequestWild",
+				[3] = place,
+				[4] = terrain,
+			}
+			
 		end
 	
 		game:GetService("Players")[tostring(game.Players.LocalPlayer)].Event:FireServer(unpack(args))
 	end
 	
 end
-coroutine.wrap(SPWE_fake_script)()
-local function IJYLEMW_fake_script() -- NibbletEncounter.NibblesEncounter 
+coroutine.wrap(QQUK_fake_script)()
+local function CTXXWZ_fake_script() -- NibbletEncounter.NibblesEncounter 
 	local script = Instance.new('LocalScript', NibbletEncounter)
 
 	function Nibblen()
@@ -859,8 +862,8 @@ local function IJYLEMW_fake_script() -- NibbletEncounter.NibblesEncounter
 	
 	
 end
-coroutine.wrap(IJYLEMW_fake_script)()
-local function GWZEXY_fake_script() -- EncounterButton.OpenEncounterScript 
+coroutine.wrap(CTXXWZ_fake_script)()
+local function TSMCMEB_fake_script() -- EncounterButton.OpenEncounterScript 
 	local script = Instance.new('LocalScript', EncounterButton)
 
 	function change2()
@@ -882,8 +885,8 @@ local function GWZEXY_fake_script() -- EncounterButton.OpenEncounterScript
 	
 	script.Parent.MouseButton1Click:Connect(change2)
 end
-coroutine.wrap(GWZEXY_fake_script)()
-local function RDHAKSB_fake_script() -- MainButton.OpenMainScript 
+coroutine.wrap(TSMCMEB_fake_script)()
+local function GLRGKK_fake_script() -- MainButton.OpenMainScript 
 	local script = Instance.new('LocalScript', MainButton)
 
 	function change()
@@ -913,8 +916,8 @@ local function RDHAKSB_fake_script() -- MainButton.OpenMainScript
 	
 	script.Parent.MouseButton1Click:Connect(change)
 end
-coroutine.wrap(RDHAKSB_fake_script)()
-local function ZNXST_fake_script() -- SpawnTeleport.SpawnTP 
+coroutine.wrap(GLRGKK_fake_script)()
+local function EAVE_fake_script() -- SpawnTeleport.SpawnTP 
 	local script = Instance.new('LocalScript', SpawnTeleport)
 
 	function teleport(num1, num2, num3)
@@ -1168,8 +1171,8 @@ local function ZNXST_fake_script() -- SpawnTeleport.SpawnTP
 	script.Parent.MouseButton1Click:Connect(main)
 	
 end
-coroutine.wrap(ZNXST_fake_script)()
-local function RMUXL_fake_script() -- Route2Teleport.R2TP 
+coroutine.wrap(EAVE_fake_script)()
+local function FIQV_fake_script() -- Route2Teleport.R2TP 
 	local script = Instance.new('LocalScript', Route2Teleport)
 
 	function teleport(num1, num2, num3)
@@ -1418,8 +1421,8 @@ local function RMUXL_fake_script() -- Route2Teleport.R2TP
 	
 	
 end
-coroutine.wrap(RMUXL_fake_script)()
-local function THBP_fake_script() -- Route3Teleport.R3TP 
+coroutine.wrap(FIQV_fake_script)()
+local function MMOHR_fake_script() -- Route3Teleport.R3TP 
 	local script = Instance.new('LocalScript', Route3Teleport)
 
 	function teleport(num1, num2, num3)
@@ -1670,8 +1673,8 @@ local function THBP_fake_script() -- Route3Teleport.R3TP
 	script.Parent.MouseButton1Click:Connect(main)
 	
 end
-coroutine.wrap(THBP_fake_script)()
-local function XUDLE_fake_script() -- Route4Teleport.R4TP 
+coroutine.wrap(MMOHR_fake_script)()
+local function NIJLO_fake_script() -- Route4Teleport.R4TP 
 	local script = Instance.new('LocalScript', Route4Teleport)
 
 	function teleport(num1, num2, num3)
@@ -1919,8 +1922,8 @@ local function XUDLE_fake_script() -- Route4Teleport.R4TP
 	script.Parent.MouseButton1Click:Connect(main)
 	
 end
-coroutine.wrap(XUDLE_fake_script)()
-local function BZLY_fake_script() -- LakeTeleport.LakeTP 
+coroutine.wrap(NIJLO_fake_script)()
+local function YAAQD_fake_script() -- LakeTeleport.LakeTP 
 	local script = Instance.new('LocalScript', LakeTeleport)
 
 	function teleport(num1, num2, num3)
@@ -2168,8 +2171,8 @@ local function BZLY_fake_script() -- LakeTeleport.LakeTP
 	script.Parent.MouseButton1Click:Connect(main)
 	
 end
-coroutine.wrap(BZLY_fake_script)()
-local function MMXQN_fake_script() -- SewerTeleport.SewerTeleport 
+coroutine.wrap(YAAQD_fake_script)()
+local function RFTZMSU_fake_script() -- SewerTeleport.SewerTeleport 
 	local script = Instance.new('LocalScript', SewerTeleport)
 
 	function teleport(num1, num2, num3)
@@ -2427,8 +2430,8 @@ local function MMXQN_fake_script() -- SewerTeleport.SewerTeleport
 	script.Parent.MouseButton1Click:Connect(main)
 	
 end
-coroutine.wrap(MMXQN_fake_script)()
-local function QLUL_fake_script() -- GraphiteLodgeTeleport.GraphiteLodgeTP 
+coroutine.wrap(RFTZMSU_fake_script)()
+local function SIVMQF_fake_script() -- GraphiteLodgeTeleport.GraphiteLodgeTP 
 	local script = Instance.new('LocalScript', GraphiteLodgeTeleport)
 
 	function teleport(num1, num2, num3)
@@ -2674,8 +2677,8 @@ local function QLUL_fake_script() -- GraphiteLodgeTeleport.GraphiteLodgeTP
 	script.Parent.MouseButton1Click:Connect(main)
 	
 end
-coroutine.wrap(QLUL_fake_script)()
-local function VCYKQ_fake_script() -- Route1Teleport.R1TP 
+coroutine.wrap(SIVMQF_fake_script)()
+local function XYEEKC_fake_script() -- Route1Teleport.R1TP 
 	local script = Instance.new('LocalScript', Route1Teleport)
 
 	function teleport(num1, num2, num3)
@@ -2926,8 +2929,8 @@ local function VCYKQ_fake_script() -- Route1Teleport.R1TP
 	script.Parent.MouseButton1Click:Connect(main)
 	
 end
-coroutine.wrap(VCYKQ_fake_script)()
-local function HVXRIAK_fake_script() -- CrossRoadsTeleport.CrossroadsTP 
+coroutine.wrap(XYEEKC_fake_script)()
+local function QICDRBI_fake_script() -- CrossRoadsTeleport.CrossroadsTP 
 	local script = Instance.new('LocalScript', CrossRoadsTeleport)
 
 	function teleport(num1, num2, num3)
@@ -3177,8 +3180,8 @@ local function HVXRIAK_fake_script() -- CrossRoadsTeleport.CrossroadsTP
 	script.Parent.MouseButton1Click:Connect(main)
 	
 end
-coroutine.wrap(HVXRIAK_fake_script)()
-local function TWXUSU_fake_script() -- TeleportButton.OpenTeleporterScript 
+coroutine.wrap(QICDRBI_fake_script)()
+local function DDWXR_fake_script() -- TeleportButton.OpenTeleporterScript 
 	local script = Instance.new('LocalScript', TeleportButton)
 
 	function change3()
@@ -3202,8 +3205,8 @@ local function TWXUSU_fake_script() -- TeleportButton.OpenTeleporterScript
 	
 	script.Parent.MouseButton1Click:Connect(change3)
 end
-coroutine.wrap(TWXUSU_fake_script)()
-local function KXBTKU_fake_script() -- ScreenGui.Draggable Frame 
+coroutine.wrap(DDWXR_fake_script)()
+local function KMWASS_fake_script() -- ScreenGui.Draggable Frame 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	frame = script.Parent.Frame
@@ -3211,8 +3214,8 @@ local function KXBTKU_fake_script() -- ScreenGui.Draggable Frame
 	frame.Active = true
 	frame.Selectable = true
 end
-coroutine.wrap(KXBTKU_fake_script)()
-local function ZUWPGT_fake_script() -- ScreenGui.Check Game Version 
+coroutine.wrap(KMWASS_fake_script)()
+local function VNUMDAQ_fake_script() -- ScreenGui.Check Game Version 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	function checkVersion() 
@@ -3224,8 +3227,8 @@ local function ZUWPGT_fake_script() -- ScreenGui.Check Game Version
 	checkVersion()
 	
 end
-coroutine.wrap(ZUWPGT_fake_script)()
-local function UVTK_fake_script() -- ScreenGui.NoclipScript 
+coroutine.wrap(VNUMDAQ_fake_script)()
+local function BRFHIWF_fake_script() -- ScreenGui.NoclipScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	
@@ -3250,7 +3253,7 @@ local function UVTK_fake_script() -- ScreenGui.NoclipScript
 	Clip = true
 	
 	game:GetService("UserInputService").InputBegan:Connect(function(key,isTyping)
-		if key.KeyCode == Enum.KeyCode.N and isTyping == false then
+		if key.KeyCode == Enum.KeyCode.N then
 			if Clip == false then
 				Noclipping:Disconnect()
 				Clip = true
@@ -3269,8 +3272,8 @@ local function UVTK_fake_script() -- ScreenGui.NoclipScript
 	
 	
 end
-coroutine.wrap(UVTK_fake_script)()
-local function NBJAV_fake_script() -- ScreenGui.FlyScript 
+coroutine.wrap(BRFHIWF_fake_script)()
+local function AZERU_fake_script() -- ScreenGui.FlyScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	
@@ -3379,7 +3382,7 @@ local function NBJAV_fake_script() -- ScreenGui.FlyScript
 	
 	
 	game:GetService("UserInputService").InputBegan:Connect(function(key,isTyping)
-		if key.KeyCode == Enum.KeyCode.F and isTyping == false then
+		if key.KeyCode == Enum.KeyCode.F then
 			if FLYING == false then
 				sFLY()
 				FLYING = true
@@ -3397,4 +3400,4 @@ local function NBJAV_fake_script() -- ScreenGui.FlyScript
 	
 	
 end
-coroutine.wrap(NBJAV_fake_script)()
+coroutine.wrap(AZERU_fake_script)()
