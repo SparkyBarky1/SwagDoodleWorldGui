@@ -815,7 +815,7 @@ local function NUTC_fake_script() -- EncounterScripts.MainBattleScript
 			[4] = terrain,
 			[5] = tostring(script.Parent.TextBox.Text),
 		}
-		printconsole("updated2"+tostring(script.Parent.TextBox.Text)+"j")
+		printconsole(tostring(script.Parent.TextBox.Text))
 		if args[5] == "" then
 			printconsole("hi")
 			local args = {
