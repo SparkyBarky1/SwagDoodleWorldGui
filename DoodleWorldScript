@@ -1,4 +1,6 @@
 
+
+
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
@@ -815,19 +817,20 @@ local function NUTC_fake_script() -- EncounterScripts.MainBattleScript
 			[4] = terrain,
 			[5] = tostring(script.Parent.TextBox.Text),
 		}
-		printconsole(tostring(script.Parent.TextBox.Text))
+		
 		if args[5] == "" then
-			printconsole("hi")
+			
 			local args = {
 				[1] = "",
 				[2] = "RequestWild",
 				[3] = place,
 				[4] = terrain,
 			}
-			
-		end
+				game:GetService("Players")[tostring(game.Players.LocalPlayer)].Event:FireServer(unpack(args))
+		else
 	
 		game:GetService("Players")[tostring(game.Players.LocalPlayer)].Event:FireServer(unpack(args))
+		end
 	end
 	
 end
