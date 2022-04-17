@@ -498,8 +498,8 @@ local function UKVXD_fake_script() -- AllChestsButton.AllChestScript
 	local script = Instance.new('LocalScript', AllChestsButton)
 
 	function Chests()
-		for i = 1, #(game.Workspace:GetChildren()[14].Chests:GetChildren()) do
-			game.Workspace:GetChildren()[14].Chests:GetChildren()[i].Helper.CFrame = game.Workspace.TargetFilter:GetChildren()[2].HumanoidRootPart.CFrame
+		for i = 1, #(game.Workspace:GetChildren()[13].Chests:GetChildren()) do
+			game.Workspace:GetChildren()[13].Chests:GetChildren()[i].Helper.CFrame = game.Workspace.TargetFilter:GetChildren()[2].HumanoidRootPart.CFrame
 			wait(2)
 			mouse1click()
 			wait(1)
@@ -535,13 +535,13 @@ local function RBYAV_fake_script() -- GemChests.GemChestScript
 
 	function Chests2()
 		
-			local currentLocation = tostring(game.Workspace:GetChildren()[14])
+			local currentLocation = tostring(game.Workspace:GetChildren()[13])
 	
 			if currentLocation == "001_Chunk" then
-			game.Workspace:GetChildren()[14].Chests:GetChildren()[3].Helper.CFrame = game.Workspace.TargetFilter:GetChildren()[2].HumanoidRootPart.CFrame
+			game.Workspace:GetChildren()[13].Chests:GetChildren()[3].Helper.CFrame = game.Workspace.TargetFilter:GetChildren()[2].HumanoidRootPart.CFrame
 			
 		else if currentLocation == "014_GraphiteLodge" then
-				game.Workspace:GetChildren()[14].Chests:GetChildren()[2].Helper.CFrame = game.Workspace.TargetFilter:GetChildren()[2].HumanoidRootPart.CFrame
+				game.Workspace:GetChildren()[13].Chests:GetChildren()[2].Helper.CFrame = game.Workspace.TargetFilter:GetChildren()[2].HumanoidRootPart.CFrame
 			end
 		end
 	end
@@ -1031,7 +1031,7 @@ local function EBXNZS_fake_script() -- SpawnTeleport.SpawnTP
 	
 	
 	function returnLocationAsIndex()
-		local currentLocation = tostring(game.Workspace:GetChildren()[14])
+		local currentLocation = tostring(game.Workspace:GetChildren()[13])
 	
 		if currentLocation == "017_Crossroads" then
 			return 7
@@ -1286,7 +1286,7 @@ local function RCPOOZI_fake_script() -- Route2Teleport.R2TP
 	
 	
 	function returnLocationAsIndex()
-		local currentLocation = tostring(game.Workspace:GetChildren()[14])
+		local currentLocation = tostring(game.Workspace:GetChildren()[13])
 	
 		if currentLocation == "017_Crossroads" then
 			return 7
@@ -1536,7 +1536,7 @@ local function ONTPGM_fake_script() -- Route3Teleport.R3TP
 	
 	
 	function returnLocationAsIndex()
-		local currentLocation = tostring(game.Workspace:GetChildren()[14])
+		local currentLocation = tostring(game.Workspace:GetChildren())
 	
 		if currentLocation == "017_Crossroads" then
 			return 7
@@ -1788,7 +1788,7 @@ local function XJUHNPD_fake_script() -- Route4Teleport.R4TP
 	
 	
 	function returnLocationAsIndex()
-		local currentLocation = tostring(game.Workspace:GetChildren()[14])
+		local currentLocation = tostring(game.Workspace:GetChildren()[13])
 	
 		if currentLocation == "017_Crossroads" then
 			return 7
@@ -2035,7 +2035,7 @@ local function WFFA_fake_script() -- LakeTeleport.LakeTP
 	
 	
 	function returnLocationAsIndex()
-		local currentLocation = tostring(game.Workspace:GetChildren()[14])
+		local currentLocation = tostring(game.Workspace:GetChildren()[13])
 	
 		if currentLocation == "017_Crossroads" then
 			return 7
@@ -2286,7 +2286,7 @@ local function MMPXYF_fake_script() -- SewerTeleport.SewerTeleport
 	
 	
 	function returnLocationAsIndex()
-		local currentLocation = tostring(game.Workspace:GetChildren()[14])
+		local currentLocation = tostring(game.Workspace:GetChildren()[13])
 	
 		if currentLocation == "017_Crossroads" then
 			return 7
@@ -2545,7 +2545,7 @@ local function CPUDVT_fake_script() -- GraphiteLodgeTeleport.GraphiteLodgeTP
 	
 	
 	function returnLocationAsIndex()
-		local currentLocation = tostring(game.Workspace:GetChildren()[14])
+		local currentLocation = tostring(game.Workspace:GetChildren()[13])
 	
 		if currentLocation == "017_Crossroads" then
 			return 7
