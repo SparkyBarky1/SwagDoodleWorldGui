@@ -2792,7 +2792,7 @@ local function SSQUAEP_fake_script() -- Route1Teleport.R1TP
 	
 	
 	function returnLocationAsIndex()
-		local currentLocation = tostring(game.Workspace:GetChildren()[14])
+		local currentLocation = tostring(game.Workspace:GetChildren()[13])
 	
 		if currentLocation == "017_Crossroads" then
 			return 7
@@ -3044,7 +3044,7 @@ local function CTBYH_fake_script() -- CrossRoadsTeleport.CrossroadsTP
 	
 	
 	function returnLocationAsIndex()
-		local currentLocation = tostring(game.Workspace:GetChildren()[14])
+		local currentLocation = tostring(game.Workspace:GetChildren()[13])
 	
 		if currentLocation == "017_Crossroads" then
 			return 7
