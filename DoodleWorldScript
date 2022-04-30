@@ -1,5 +1,4 @@
-
-
+-- Updated for Crystal Caverns Update, Enjoy :) -B1H4H
 
 -- Instances:
 
@@ -26,6 +25,8 @@ local GraphiteLodgeEncounter = Instance.new("TextButton")
 local CrossRoadsEncounter = Instance.new("TextButton")
 local TextBox = Instance.new("TextBox")
 local TextLabel = Instance.new("TextLabel")
+local CrystalCavernEncounter = Instance.new("TextButton")
+local CrystalCavernWater = Instance.new("TextButton")
 local NibbletEncounter = Instance.new("TextButton")
 local EncounterButton = Instance.new("TextButton")
 local DesignLabel = Instance.new("TextLabel")
@@ -43,6 +44,7 @@ local GraphiteLodgeTeleport = Instance.new("TextButton")
 local Route1Teleport = Instance.new("TextButton")
 local TextLabel_3 = Instance.new("TextLabel")
 local CrossRoadsTeleport = Instance.new("TextButton")
+local CrystalCavernTeleport = Instance.new("TextButton")
 local TeleportButton = Instance.new("TextButton")
 local DesignLabel_3 = Instance.new("TextLabel")
 
@@ -247,7 +249,7 @@ CrossRoadsEncounter.TextSize = 14.000
 
 TextBox.Parent = EncounterScripts
 TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextBox.Position = UDim2.new(0.360333353, 0, 0.586101055, 0)
+TextBox.Position = UDim2.new(0.363666683, 0, 0.688203156, 0)
 TextBox.Size = UDim2.new(0, 85, 0, 31)
 TextBox.Font = Enum.Font.SourceSans
 TextBox.PlaceholderText = "..."
@@ -258,17 +260,39 @@ TextBox.TextSize = 14.000
 TextLabel.Parent = EncounterScripts
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.308333308, 0, 0.522757828, 0)
+TextLabel.Position = UDim2.new(0.311666638, 0, 0.624859929, 0)
 TextLabel.Size = UDim2.new(0, 115, 0, 14)
 TextLabel.Font = Enum.Font.SourceSans
 TextLabel.Text = "Starting Weather"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextSize = 14.000
 
+CrystalCavernEncounter.Name = "Crystal Cavern Encounter"
+CrystalCavernEncounter.Parent = EncounterScripts
+CrystalCavernEncounter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CrystalCavernEncounter.Position = UDim2.new(0.690333366, 0, 0.326586962, 0)
+CrystalCavernEncounter.Size = UDim2.new(0, 86, 0, 30)
+CrystalCavernEncounter.Font = Enum.Font.SourceSans
+CrystalCavernEncounter.Text = "Crystal Cavern"
+CrystalCavernEncounter.TextColor3 = Color3.fromRGB(0, 0, 0)
+CrystalCavernEncounter.TextSize = 14.000
+
+CrystalCavernWater.Name = "Crystal Cavern Water"
+CrystalCavernWater.Parent = EncounterScripts
+CrystalCavernWater.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CrystalCavernWater.Position = UDim2.new(0.0136666894, 0, 0.452713072, 0)
+CrystalCavernWater.Size = UDim2.new(0, 86, 0, 30)
+CrystalCavernWater.Font = Enum.Font.SourceSans
+CrystalCavernWater.Text = "Crystal Cavern  Water"
+CrystalCavernWater.TextColor3 = Color3.fromRGB(0, 0, 0)
+CrystalCavernWater.TextScaled = true
+CrystalCavernWater.TextSize = 14.000
+CrystalCavernWater.TextWrapped = true
+
 NibbletEncounter.Name = "Nibblet Encounter"
 NibbletEncounter.Parent = EncounterScripts
 NibbletEncounter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NibbletEncounter.Position = UDim2.new(0.690333366, 0, 0.326586962, 0)
+NibbletEncounter.Position = UDim2.new(0.350333363, 0, 0.452713072, 0)
 NibbletEncounter.Size = UDim2.new(0, 86, 0, 30)
 NibbletEncounter.Font = Enum.Font.SourceSans
 NibbletEncounter.Text = "Nibblen"
@@ -440,6 +464,16 @@ CrossRoadsTeleport.Text = "Cross Roads"
 CrossRoadsTeleport.TextColor3 = Color3.fromRGB(0, 0, 0)
 CrossRoadsTeleport.TextSize = 14.000
 
+CrystalCavernTeleport.Name = "Crystal Cavern Teleport"
+CrystalCavernTeleport.Parent = TeleportScripts
+CrystalCavernTeleport.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CrystalCavernTeleport.Position = UDim2.new(0.0154057145, 0, 0.551588893, 0)
+CrystalCavernTeleport.Size = UDim2.new(0, 86, 0, 30)
+CrystalCavernTeleport.Font = Enum.Font.SourceSans
+CrystalCavernTeleport.Text = "Crystal Cavern"
+CrystalCavernTeleport.TextColor3 = Color3.fromRGB(0, 0, 0)
+CrystalCavernTeleport.TextSize = 14.000
+
 TeleportButton.Name = "TeleportButton"
 TeleportButton.Parent = Frame
 TeleportButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -465,7 +499,7 @@ DesignLabel_3.TextSize = 14.000
 
 -- Scripts:
 
-local function VTESC_fake_script() -- HealButton.HealScript 
+local function YXLINRS_fake_script() -- HealButton.HealScript 
 	local script = Instance.new('LocalScript', HealButton)
 
 	function Heal()
@@ -481,8 +515,8 @@ local function VTESC_fake_script() -- HealButton.HealScript
 	
 	script.Parent.MouseButton1Click:Connect(Heal)
 end
-coroutine.wrap(VTESC_fake_script)()
-local function HTFQN_fake_script() -- RejoinButton.Rejoin 
+coroutine.wrap(YXLINRS_fake_script)()
+local function YALGPV_fake_script() -- RejoinButton.Rejoin 
 	local script = Instance.new('LocalScript', RejoinButton)
 
 	function Heal()
@@ -493,13 +527,13 @@ local function HTFQN_fake_script() -- RejoinButton.Rejoin
 	
 	script.Parent.MouseButton1Click:Connect(Heal)
 end
-coroutine.wrap(HTFQN_fake_script)()
-local function UKVXD_fake_script() -- AllChestsButton.AllChestScript 
+coroutine.wrap(YALGPV_fake_script)()
+local function VEWRIFY_fake_script() -- AllChestsButton.AllChestScript 
 	local script = Instance.new('LocalScript', AllChestsButton)
 
 	function Chests()
-		for i = 1, #(game.Workspace:GetChildren()[13].Chests:GetChildren()) do
-			game.Workspace:GetChildren()[13].Chests:GetChildren()[i].Helper.CFrame = game.Workspace.TargetFilter:GetChildren()[2].HumanoidRootPart.CFrame
+		for i = 1, #(game.Workspace:GetChildren()[14].Chests:GetChildren()) do
+			game.Workspace:GetChildren()[14].Chests:GetChildren()[i].Helper.CFrame = game.Workspace.TargetFilter:GetChildren()[2].HumanoidRootPart.CFrame
 			wait(2)
 			mouse1click()
 			wait(1)
@@ -508,8 +542,8 @@ local function UKVXD_fake_script() -- AllChestsButton.AllChestScript
 	
 	script.Parent.MouseButton1Click:Connect(Chests)
 end
-coroutine.wrap(UKVXD_fake_script)()
-local function QSXU_fake_script() -- GiveStarter.GiveStarterScript 
+coroutine.wrap(VEWRIFY_fake_script)()
+local function HZGN_fake_script() -- GiveStarter.GiveStarterScript 
 	local script = Instance.new('LocalScript', GiveStarter)
 
 	function starter()
@@ -529,27 +563,27 @@ local function QSXU_fake_script() -- GiveStarter.GiveStarterScript
 	
 	script.Parent.MouseButton1Click:Connect(starter)
 end
-coroutine.wrap(QSXU_fake_script)()
-local function RBYAV_fake_script() -- GemChests.GemChestScript 
+coroutine.wrap(HZGN_fake_script)()
+local function QOLCYP_fake_script() -- GemChests.GemChestScript 
 	local script = Instance.new('LocalScript', GemChests)
 
 	function Chests2()
 		
-			local currentLocation = tostring(game.Workspace:GetChildren()[13])
+			local currentLocation = tostring(game.Workspace:GetChildren()[14])
 	
 			if currentLocation == "001_Chunk" then
-			game.Workspace:GetChildren()[13].Chests:GetChildren()[3].Helper.CFrame = game.Workspace.TargetFilter:GetChildren()[2].HumanoidRootPart.CFrame
+			game.Workspace:GetChildren()[14].Chests:GetChildren()[3].Helper.CFrame = game.Workspace.TargetFilter:GetChildren()[2].HumanoidRootPart.CFrame
 			
 		else if currentLocation == "014_GraphiteLodge" then
-				game.Workspace:GetChildren()[13].Chests:GetChildren()[2].Helper.CFrame = game.Workspace.TargetFilter:GetChildren()[2].HumanoidRootPart.CFrame
+				game.Workspace:GetChildren()[14].Chests:GetChildren()[2].Helper.CFrame = game.Workspace.TargetFilter:GetChildren()[2].HumanoidRootPart.CFrame
 			end
 		end
 	end
 	
 	script.Parent.MouseButton1Click:Connect(Chests2)
 end
-coroutine.wrap(RBYAV_fake_script)()
-local function JTQZYS_fake_script() -- MoneyTrainer.MoneyTrainerOverride 
+coroutine.wrap(QOLCYP_fake_script)()
+local function OVKFU_fake_script() -- MoneyTrainer.MoneyTrainerOverride 
 	local script = Instance.new('LocalScript', MoneyTrainer)
 
 	function run()
@@ -573,8 +607,8 @@ local function JTQZYS_fake_script() -- MoneyTrainer.MoneyTrainerOverride
 	
 	script.Parent.MouseButton1Click:Connect(run)
 end
-coroutine.wrap(JTQZYS_fake_script)()
-local function BTDJX_fake_script() -- Frame.Hide ui script 
+coroutine.wrap(OVKFU_fake_script)()
+local function IGMO_fake_script() -- Frame.Hide ui script 
 	local script = Instance.new('LocalScript', Frame)
 
 	game:GetService("UserInputService").InputBegan:Connect(function(key,isTyping)
@@ -594,8 +628,8 @@ local function BTDJX_fake_script() -- Frame.Hide ui script
 	end)
 	
 end
-coroutine.wrap(BTDJX_fake_script)()
-local function WGPPL_fake_script() -- Route1Encounter.R1Encounter 
+coroutine.wrap(IGMO_fake_script)()
+local function NQKUAKV_fake_script() -- Route1Encounter.R1Encounter 
 	local script = Instance.new('LocalScript', Route1Encounter)
 
 	function p()
@@ -625,8 +659,8 @@ local function WGPPL_fake_script() -- Route1Encounter.R1Encounter
 	
 	
 end
-coroutine.wrap(WGPPL_fake_script)()
-local function ZEKMENK_fake_script() -- Route2Encounter.R2Encounter 
+coroutine.wrap(NQKUAKV_fake_script)()
+local function DZLODUC_fake_script() -- Route2Encounter.R2Encounter 
 	local script = Instance.new('LocalScript', Route2Encounter)
 
 	function p()	
@@ -656,8 +690,8 @@ local function ZEKMENK_fake_script() -- Route2Encounter.R2Encounter
 	
 	
 end
-coroutine.wrap(ZEKMENK_fake_script)()
-local function CXEU_fake_script() -- Route3Encounter.R3Encounter 
+coroutine.wrap(DZLODUC_fake_script)()
+local function CAOPRC_fake_script() -- Route3Encounter.R3Encounter 
 	local script = Instance.new('LocalScript', Route3Encounter)
 
 	function p()
@@ -671,8 +705,8 @@ local function CXEU_fake_script() -- Route3Encounter.R3Encounter
 	
 	
 end
-coroutine.wrap(CXEU_fake_script)()
-local function JBVQSK_fake_script() -- Route4Encounter.R4Encounter 
+coroutine.wrap(CAOPRC_fake_script)()
+local function EXQDX_fake_script() -- Route4Encounter.R4Encounter 
 	local script = Instance.new('LocalScript', Route4Encounter)
 
 	function Encounter()
@@ -693,8 +727,8 @@ local function JBVQSK_fake_script() -- Route4Encounter.R4Encounter
 	
 	
 end
-coroutine.wrap(JBVQSK_fake_script)()
-local function XTTRATM_fake_script() -- LakeEncounter.LakeEncounter 
+coroutine.wrap(EXQDX_fake_script)()
+local function TJJNWU_fake_script() -- LakeEncounter.LakeEncounter 
 	local script = Instance.new('LocalScript', LakeEncounter)
 
 	function p()
@@ -723,8 +757,8 @@ local function XTTRATM_fake_script() -- LakeEncounter.LakeEncounter
 	
 	
 end
-coroutine.wrap(XTTRATM_fake_script)()
-local function HMZB_fake_script() -- SewerEncounter.SewerEncounter 
+coroutine.wrap(TJJNWU_fake_script)()
+local function TJYNDQ_fake_script() -- SewerEncounter.SewerEncounter 
 	local script = Instance.new('LocalScript', SewerEncounter)
 
 	function p()
@@ -735,8 +769,8 @@ local function HMZB_fake_script() -- SewerEncounter.SewerEncounter
 	
 	script.Parent.MouseButton1Click:Connect(p)
 end
-coroutine.wrap(HMZB_fake_script)()
-local function ESPO_fake_script() -- GraphiteLodgeEncounter.GraphiteLodgeEncounter 
+coroutine.wrap(TJYNDQ_fake_script)()
+local function XKBNOGA_fake_script() -- GraphiteLodgeEncounter.GraphiteLodgeEncounter 
 	local script = Instance.new('LocalScript', GraphiteLodgeEncounter)
 
 	function p()
@@ -770,8 +804,8 @@ local function ESPO_fake_script() -- GraphiteLodgeEncounter.GraphiteLodgeEncount
 	
 	
 end
-coroutine.wrap(ESPO_fake_script)()
-local function AXON_fake_script() -- CrossRoadsEncounter.Cross Roads EncounterScript 
+coroutine.wrap(XKBNOGA_fake_script)()
+local function ZKBOMWE_fake_script() -- CrossRoadsEncounter.Cross Roads EncounterScript 
 	local script = Instance.new('LocalScript', CrossRoadsEncounter)
 
 	
@@ -803,8 +837,8 @@ local function AXON_fake_script() -- CrossRoadsEncounter.Cross Roads EncounterSc
 	
 	
 end
-coroutine.wrap(AXON_fake_script)()
-local function NUTC_fake_script() -- EncounterScripts.MainBattleScript 
+coroutine.wrap(ZKBOMWE_fake_script)()
+local function OKNYL_fake_script() -- EncounterScripts.MainBattleScript 
 	local script = Instance.new('LocalScript', EncounterScripts)
 
 	function Encounter(place,terrain)
@@ -818,24 +852,66 @@ local function NUTC_fake_script() -- EncounterScripts.MainBattleScript
 			[5] = tostring(script.Parent.TextBox.Text),
 		}
 		
-		if args[5] == "" then
-			
+		if args[5] == "..." or args[5] == "" then
 			local args = {
 				[1] = "",
 				[2] = "RequestWild",
 				[3] = place,
 				[4] = terrain,
 			}
-				game:GetService("Players")[tostring(game.Players.LocalPlayer)].Event:FireServer(unpack(args))
-		else
+			game:GetService("Players")[tostring(game.Players.LocalPlayer)].Event:FireServer(unpack(args))
+		end
 	
 		game:GetService("Players")[tostring(game.Players.LocalPlayer)].Event:FireServer(unpack(args))
-		end
 	end
 	
 end
-coroutine.wrap(NUTC_fake_script)()
-local function FBCRZ_fake_script() -- NibbletEncounter.NibblesEncounter 
+coroutine.wrap(OKNYL_fake_script)()
+local function HOCR_fake_script() -- CrystalCavernEncounter.CrystalCavernEncounter 
+	local script = Instance.new('LocalScript', CrystalCavernEncounter)
+
+	function Cc()
+		Encounter("018_CrystalCaverns","WildGrass")
+	end
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(Cc)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+end
+coroutine.wrap(HOCR_fake_script)()
+local function FIWIXS_fake_script() -- CrystalCavernWater.CrystalCavernWater 
+	local script = Instance.new('LocalScript', CrystalCavernWater)
+
+	function Cc()
+		Encounter("018_CrystalCaverns","CaveWater")
+	end
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(Cc)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+end
+coroutine.wrap(FIWIXS_fake_script)()
+local function AAHIKIF_fake_script() -- NibbletEncounter.NibblesEncounter 
 	local script = Instance.new('LocalScript', NibbletEncounter)
 
 	function Nibblen()
@@ -864,8 +940,8 @@ local function FBCRZ_fake_script() -- NibbletEncounter.NibblesEncounter
 	
 	
 end
-coroutine.wrap(FBCRZ_fake_script)()
-local function EJIVNDG_fake_script() -- EncounterButton.OpenEncounterScript 
+coroutine.wrap(AAHIKIF_fake_script)()
+local function KJCEBXW_fake_script() -- EncounterButton.OpenEncounterScript 
 	local script = Instance.new('LocalScript', EncounterButton)
 
 	function change2()
@@ -887,8 +963,8 @@ local function EJIVNDG_fake_script() -- EncounterButton.OpenEncounterScript
 	
 	script.Parent.MouseButton1Click:Connect(change2)
 end
-coroutine.wrap(EJIVNDG_fake_script)()
-local function LAEGXY_fake_script() -- MainButton.OpenMainScript 
+coroutine.wrap(KJCEBXW_fake_script)()
+local function DVWB_fake_script() -- MainButton.OpenMainScript 
 	local script = Instance.new('LocalScript', MainButton)
 
 	function change()
@@ -918,2022 +994,121 @@ local function LAEGXY_fake_script() -- MainButton.OpenMainScript
 	
 	script.Parent.MouseButton1Click:Connect(change)
 end
-coroutine.wrap(LAEGXY_fake_script)()
-local function EBXNZS_fake_script() -- SpawnTeleport.SpawnTP 
+coroutine.wrap(DVWB_fake_script)()
+local function RFSTIU_fake_script() -- SpawnTeleport.SpawnTP 
 	local script = Instance.new('LocalScript', SpawnTeleport)
 
-	function teleport(num1, num2, num3)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(num1, num2, num3)
-	end
-	
-	
-	
-	function noclip()
-		Clip = false	
-		function NoclipLoop()
-	
-	
-			if Clip == false and game:GetService("Players").LocalPlayer.Character ~= nil then
-				for _, child in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
-					if child:IsA("BasePart") and child.CanCollide == true then
-						child.CanCollide = false
-	
-					end
-				end
-			end
-		end
-		Noclipping = game:GetService('RunService').Stepped:connect(NoclipLoop)
-	end
-	
-	
-	
-	
-	function lodgetoroute4()
-		teleport(-2238.35107, 73.0546417, -229.331879)
+	function t() 
+		TeleportTo(1)
 		wait(5)
-	end
-	
-	
-	function route4tolodge()
-		teleport(2817.52734, 189.578491, 621.564087)
-		wait(5)
-	end
-	
-	
-	function route4toroute3()
-		teleport(2524.5249, 102.8246, 995.451172)
-		wait(5)
-	end
-	
-	
-	function route3toroute4()
-		teleport(188.350845, 34.9344406, 14.34062)
-		wait(5)
-	end
-	
-	
-	function route3tolakewood()
-		teleport(-206.200073, 50.9301834, -252.539825)
-		wait(5)
-	end
-	
-	
-	function lakewoodtoroute3()
-		teleport(1198.85718, 81.6438446, 1274.23486)
-		wait(5)
-	end
-	
-	
-	function lakewoodtoroute2()
-		teleport(1403.58557, 81.6438446, 903.152283)
-		wait(5)
-	end
-	
-	
-	function route2tolakewood()
-		teleport(640.05011, 53.1003838, 1460.92346)
-		wait(5)
-	end
-	
-	
-	function route2toroute1()
-		teleport(753.899963, 43.3784103, 1130.3385)
-		wait(5)
-	end
-	
-	
-	
-	function route1toroute2()
-		teleport(909.838989, -261.326843, 905.263367)
-		wait(5)
-	end
-	
-	function route1tospawn()
-		teleport(773.88330078125, -267.7674255371094, 9.078937530517578)
-	end    
-	
-	function sewertolakewood()
-		teleport(861.899353, 52.7592773, -110.893608)
-	end
-	
-	
-	function graphiteLodgetoCrossroads()
-		teleport(-2454.76196, 94.4604797, 212.354431)
-		wait(5)
-	end
-	
-	function crossroadstoGraphiteLodge()
-		teleport(-80.5257492, 156.290695, -452.24115)
-		wait(5)
-	end
-	
-	-- finds the index of where you are
-	
-	
-	function returnLocationAsIndex()
-		local currentLocation = tostring(game.Workspace:GetChildren()[13])
-	
-		if currentLocation == "017_Crossroads" then
-			return 7
-	
-		else if currentLocation == "014_GraphiteLodge" then
-				return 6
-			else if currentLocation == "013_Route4" then
-					return 5
-				else if currentLocation == "010_Route3" then
-						return 4
-					else if currentLocation == "007_Lakewood" then
-							return 3
-						else if currentLocation == "006_Route2" then
-								return 2
-							else if currentLocation == "001_Chunk" then
-									return 1
-								else if currentLocation == "011_Sewer" then
-										sewertolakewood()
-										wait(5)
-										return 3
-									else 
-										return nil
-									end
-								end
-							end
-						end
-					end
-				end
-			end
-		end
-	end
-	
-	
-	
-	-- steps from one chunk to another
-	function stepBetweenChunk(number)
-	
-		if number == 1 then
-			route1toroute2()
-	
-		else if number == 2 then
-				route2tolakewood()
-	
-			else if number == 3 then
-					lakewoodtoroute3()
-	
-				else if number == 4 then
-						route3toroute4()
-	
-					else if number == 5 then
-							route4tolodge()
-	
-	
-						else if number == 6 then
-								graphiteLodgetoCrossroads()
-	
-							end
-						end
-					end
-				end
-			end
-		end
-	
-	
-		if number == -1 then
-			route2toroute1()
-	
-		else if number == -2 then
-				lakewoodtoroute2()
-	
-			else if number == -3 then
-					route3tolakewood()
-	
-				else if number == -4 then
-						route4toroute3()
-	
-					else if number == -5 then
-							lodgetoroute4()
-	
-						else if number == -6 then
-								crossroadstoGraphiteLodge()
-	
-							end
-	
-						end
-					end
-				end
-			end
-		end
-	
-	
-	
-	
-	end
-	
-	
-	
-	
-	
-	-- takes 2 numbers as a current loaction and a desired location then recursivly travels to destination
-	function travel(current, destination) 
-		if current ~= destination and current ~= 0 then
-			stepBetweenChunk(current)
-			current = current + 1
-			travel(current,destination)
-		end
-	
-	end
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	function main(current, destination)
-		local current = returnLocationAsIndex()
-		local destination = 1
-		noclip()
-		if current > destination then
-			current = (current - current * 2) + 1
-			destination = (destination - destination * 2) + 1
-		end
-	
-	
-	
-		travel(current, destination)
-		
 		teleport(775.6963500976562, -267.717529296875, -4.669849872589111)
-		
-		Noclipping:Disconnect()
-		Clip = true
 	end
 	
-	script.Parent.MouseButton1Click:Connect(main)
+	script.Parent.MouseButton1Click:Connect(t)
+	
+		
+		
+	
 	
 end
-coroutine.wrap(EBXNZS_fake_script)()
-local function RCPOOZI_fake_script() -- Route2Teleport.R2TP 
+coroutine.wrap(RFSTIU_fake_script)()
+local function BLFJGD_fake_script() -- Route2Teleport.R2TP 
 	local script = Instance.new('LocalScript', Route2Teleport)
 
-	function teleport(num1, num2, num3)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(num1, num2, num3)
+	function t() 
+		TeleportTo(2)
 	end
 	
-	
-	
-	function noclip()
-		Clip = false	
-		function NoclipLoop()
-	
-	
-			if Clip == false and game:GetService("Players").LocalPlayer.Character ~= nil then
-				for _, child in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
-					if child:IsA("BasePart") and child.CanCollide == true then
-						child.CanCollide = false
-	
-					end
-				end
-			end
-		end
-		Noclipping = game:GetService('RunService').Stepped:connect(NoclipLoop)
-	end
-	
-	
-	
-	
-	function lodgetoroute4()
-		teleport(-2238.35107, 73.0546417, -229.331879)
-		wait(5)
-	end
-	
-	
-	function route4tolodge()
-		teleport(2817.52734, 189.578491, 621.564087)
-		wait(5)
-	end
-	
-	
-	function route4toroute3()
-		teleport(2524.5249, 102.8246, 995.451172)
-		wait(5)
-	end
-	
-	
-	function route3toroute4()
-		teleport(188.350845, 34.9344406, 14.34062)
-		wait(5)
-	end
-	
-	
-	function route3tolakewood()
-		teleport(-206.200073, 50.9301834, -252.539825)
-		wait(5)
-	end
-	
-	
-	function lakewoodtoroute3()
-		teleport(1198.85718, 81.6438446, 1274.23486)
-		wait(5)
-	end
-	
-	
-	function lakewoodtoroute2()
-		teleport(1403.58557, 81.6438446, 903.152283)
-		wait(5)
-	end
-	
-	
-	function route2tolakewood()
-		teleport(640.05011, 53.1003838, 1460.92346)
-		wait(5)
-	end
-	
-	
-	function route2toroute1()
-		teleport(753.899963, 43.3784103, 1130.3385)
-		wait(5)
-	end
-	
-	
-	
-	function route1toroute2()
-		teleport(909.838989, -261.326843, 905.263367)
-		wait(5)
-	end
-	
-	function route1tospawn()
-		teleport(773.88330078125, -267.7674255371094, 9.078937530517578)
-	end    
-	
-	function sewertolakewood()
-		teleport(861.899353, 52.7592773, -110.893608)
-	end
-	
-	
-	function graphiteLodgetoCrossroads()
-		teleport(-2454.76196, 94.4604797, 212.354431)
-		wait(5)
-	end
-	
-	function crossroadstoGraphiteLodge()
-		teleport(-80.5257492, 156.290695, -452.24115)
-		wait(5)
-	end
-	
-	-- finds the index of where you are
-	
-	
-	function returnLocationAsIndex()
-		local currentLocation = tostring(game.Workspace:GetChildren()[13])
-	
-		if currentLocation == "017_Crossroads" then
-			return 7
-	
-		else if currentLocation == "014_GraphiteLodge" then
-				return 6
-			else if currentLocation == "013_Route4" then
-					return 5
-				else if currentLocation == "010_Route3" then
-						return 4
-					else if currentLocation == "007_Lakewood" then
-							return 3
-						else if currentLocation == "006_Route2" then
-								return 2
-							else if currentLocation == "001_Chunk" then
-									return 1
-								else if currentLocation == "011_Sewer" then
-										sewertolakewood()
-										wait(5)
-										return 3
-									else 
-										return nil
-									end
-								end
-							end
-						end
-					end
-				end
-			end
-		end
-	end
-	
-	
-	
-	-- steps from one chunk to another
-	function stepBetweenChunk(number)
-	
-		if number == 1 then
-			route1toroute2()
-	
-		else if number == 2 then
-				route2tolakewood()
-	
-			else if number == 3 then
-					lakewoodtoroute3()
-	
-				else if number == 4 then
-						route3toroute4()
-	
-					else if number == 5 then
-							route4tolodge()
-	
-	
-						else if number == 6 then
-								graphiteLodgetoCrossroads()
-	
-							end
-						end
-					end
-				end
-			end
-		end
-	
-	
-		if number == -1 then
-			route2toroute1()
-	
-		else if number == -2 then
-				lakewoodtoroute2()
-	
-			else if number == -3 then
-					route3tolakewood()
-	
-				else if number == -4 then
-						route4toroute3()
-	
-					else if number == -5 then
-							lodgetoroute4()
-	
-						else if number == -6 then
-								crossroadstoGraphiteLodge()
-	
-							end
-	
-						end
-					end
-				end
-			end
-		end
-	
-	
-	
-	
-	end
-	
-	
-	
-	
-	
-	-- takes 2 numbers as a current loaction and a desired location then recursivly travels to destination
-	function travel(current, destination) 
-		if current ~= destination and current ~= 0 then
-			stepBetweenChunk(current)
-			current = current + 1
-			travel(current,destination)
-		end
-	
-	end
-	
-	
-	
-	
-	
-	
-	
-	function main(current, destination)
-		local current = returnLocationAsIndex()
-		local destination = 2
-		noclip()
-		if current > destination then
-			current = (current - current * 2) + 1
-			destination = (destination - destination * 2) + 1
-		end
-	
-	
-	
-		travel(current, destination)
-	
-		Noclipping:Disconnect()
-		Clip = true
-	end
-	
-	script.Parent.MouseButton1Click:Connect(main)
-	
-	
+	script.Parent.MouseButton1Click:Connect(t)
 end
-coroutine.wrap(RCPOOZI_fake_script)()
-local function ONTPGM_fake_script() -- Route3Teleport.R3TP 
+coroutine.wrap(BLFJGD_fake_script)()
+local function DCKDD_fake_script() -- Route3Teleport.R3TP 
 	local script = Instance.new('LocalScript', Route3Teleport)
 
-	function teleport(num1, num2, num3)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(num1, num2, num3)
+	function t() 
+		TeleportTo(4)
 	end
 	
-	
-	
-	function noclip()
-		Clip = false	
-		function NoclipLoop()
-	
-	
-			if Clip == false and game:GetService("Players").LocalPlayer.Character ~= nil then
-				for _, child in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
-					if child:IsA("BasePart") and child.CanCollide == true then
-						child.CanCollide = false
-	
-					end
-				end
-			end
-		end
-		Noclipping = game:GetService('RunService').Stepped:connect(NoclipLoop)
-	end
-	
-	
-	
-	
-	function lodgetoroute4()
-		teleport(-2238.35107, 73.0546417, -229.331879)
-		wait(5)
-	end
-	
-	
-	function route4tolodge()
-		teleport(2817.52734, 189.578491, 621.564087)
-		wait(5)
-	end
-	
-	
-	function route4toroute3()
-		teleport(2524.5249, 102.8246, 995.451172)
-		wait(5)
-	end
-	
-	
-	function route3toroute4()
-		teleport(188.350845, 34.9344406, 14.34062)
-		wait(5)
-	end
-	
-	
-	function route3tolakewood()
-		teleport(-206.200073, 50.9301834, -252.539825)
-		wait(5)
-	end
-	
-	
-	function lakewoodtoroute3()
-		teleport(1198.85718, 81.6438446, 1274.23486)
-		wait(5)
-	end
-	
-	
-	function lakewoodtoroute2()
-		teleport(1403.58557, 81.6438446, 903.152283)
-		wait(5)
-	end
-	
-	
-	function route2tolakewood()
-		teleport(640.05011, 53.1003838, 1460.92346)
-		wait(5)
-	end
-	
-	
-	function route2toroute1()
-		teleport(753.899963, 43.3784103, 1130.3385)
-		wait(5)
-	end
-	
-	
-	
-	function route1toroute2()
-		teleport(909.838989, -261.326843, 905.263367)
-		wait(5)
-	end
-	
-	function route1tospawn()
-		teleport(773.88330078125, -267.7674255371094, 9.078937530517578)
-	end    
-	
-	function sewertolakewood()
-		teleport(861.899353, 52.7592773, -110.893608)
-	end
-	
-	
-	function graphiteLodgetoCrossroads()
-		teleport(-2454.76196, 94.4604797, 212.354431)
-		wait(5)
-	end
-	
-	function crossroadstoGraphiteLodge()
-		teleport(-80.5257492, 156.290695, -452.24115)
-		wait(5)
-	end
-	
-	-- finds the index of where you are
-	
-	
-	function returnLocationAsIndex()
-		local currentLocation = tostring(game.Workspace:GetChildren())
-	
-		if currentLocation == "017_Crossroads" then
-			return 7
-	
-		else if currentLocation == "014_GraphiteLodge" then
-				return 6
-			else if currentLocation == "013_Route4" then
-					return 5
-				else if currentLocation == "010_Route3" then
-						return 4
-					else if currentLocation == "007_Lakewood" then
-							return 3
-						else if currentLocation == "006_Route2" then
-								return 2
-							else if currentLocation == "001_Chunk" then
-									return 1
-								else if currentLocation == "011_Sewer" then
-										sewertolakewood()
-										wait(5)
-										return 3
-									else 
-										return nil
-									end
-								end
-							end
-						end
-					end
-				end
-			end
-		end
-	end
-	
-	
-	
-	-- steps from one chunk to another
-	function stepBetweenChunk(number)
-	
-		if number == 1 then
-			route1toroute2()
-	
-		else if number == 2 then
-				route2tolakewood()
-	
-			else if number == 3 then
-					lakewoodtoroute3()
-	
-				else if number == 4 then
-						route3toroute4()
-	
-					else if number == 5 then
-							route4tolodge()
-	
-	
-						else if number == 6 then
-								graphiteLodgetoCrossroads()
-	
-							end
-						end
-					end
-				end
-			end
-		end
-	
-	
-		if number == -1 then
-			route2toroute1()
-	
-		else if number == -2 then
-				lakewoodtoroute2()
-	
-			else if number == -3 then
-					route3tolakewood()
-	
-				else if number == -4 then
-						route4toroute3()
-	
-					else if number == -5 then
-							lodgetoroute4()
-	
-						else if number == -6 then
-								crossroadstoGraphiteLodge()
-	
-							end
-	
-						end
-					end
-				end
-			end
-		end
-	
-	
-	
-	
-	end
-	
-	
-	
-	
-	
-	-- takes 2 numbers as a current loaction and a desired location then recursivly travels to destination
-	function travel(current, destination) 
-		if current ~= destination and current ~= 0 then
-			stepBetweenChunk(current)
-			current = current + 1
-			travel(current,destination)
-		end
-	
-	end
-	
-	
-	
-	
-	
-	
-	
-	function main(current, destination)
-		local current = returnLocationAsIndex()
-		local destination = 4
-		
-		noclip()
-		
-		if current > destination then
-			current = (current - current * 2) + 1
-			destination = (destination - destination * 2) + 1
-		end
-	
-	
-		travel(current, destination)
-		
-		teleport(146.83201599121094, 27.480993270874023, 11.976585388183594)
-		
-		Noclipping:Disconnect()
-		Clip = true
-	end
-	
-	script.Parent.MouseButton1Click:Connect(main)
-	
+	script.Parent.MouseButton1Click:Connect(t)
 end
-coroutine.wrap(ONTPGM_fake_script)()
-local function XJUHNPD_fake_script() -- Route4Teleport.R4TP 
+coroutine.wrap(DCKDD_fake_script)()
+local function CFKFDDV_fake_script() -- Route4Teleport.R4TP 
 	local script = Instance.new('LocalScript', Route4Teleport)
 
-	function teleport(num1, num2, num3)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(num1, num2, num3)
+	function t() 
+		TeleportTo(5)
 	end
 	
-	
-	
-	function noclip()
-		Clip = false	
-		function NoclipLoop()
-	
-	
-			if Clip == false and game:GetService("Players").LocalPlayer.Character ~= nil then
-				for _, child in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
-					if child:IsA("BasePart") and child.CanCollide == true then
-						child.CanCollide = false
-	
-					end
-				end
-			end
-		end
-		Noclipping = game:GetService('RunService').Stepped:connect(NoclipLoop)
-	end
-	
-	
-	
-	
-	function lodgetoroute4()
-		teleport(-2238.35107, 73.0546417, -229.331879)
-		wait(5)
-	end
-	
-	
-	function route4tolodge()
-		teleport(2817.52734, 189.578491, 621.564087)
-		wait(5)
-	end
-	
-	
-	function route4toroute3()
-		teleport(2524.5249, 102.8246, 995.451172)
-		wait(5)
-	end
-	
-	
-	function route3toroute4()
-		teleport(188.350845, 34.9344406, 14.34062)
-		wait(5)
-	end
-	
-	
-	function route3tolakewood()
-		teleport(-206.200073, 50.9301834, -252.539825)
-		wait(5)
-	end
-	
-	
-	function lakewoodtoroute3()
-		teleport(1198.85718, 81.6438446, 1274.23486)
-		wait(5)
-	end
-	
-	
-	function lakewoodtoroute2()
-		teleport(1403.58557, 81.6438446, 903.152283)
-		wait(5)
-	end
-	
-	
-	function route2tolakewood()
-		teleport(640.05011, 53.1003838, 1460.92346)
-		wait(5)
-	end
-	
-	
-	function route2toroute1()
-		teleport(753.899963, 43.3784103, 1130.3385)
-		wait(5)
-	end
-	
-	
-	
-	function route1toroute2()
-		teleport(909.838989, -261.326843, 905.263367)
-		wait(5)
-	end
-	
-	function route1tospawn()
-		teleport(773.88330078125, -267.7674255371094, 9.078937530517578)
-	end    
-	
-	function sewertolakewood()
-		teleport(861.899353, 52.7592773, -110.893608)
-	end
-	
-	
-	function graphiteLodgetoCrossroads()
-		teleport(-2454.76196, 94.4604797, 212.354431)
-		wait(5)
-	end
-	
-	function crossroadstoGraphiteLodge()
-		teleport(-80.5257492, 156.290695, -452.24115)
-		wait(5)
-	end
-	
-	-- finds the index of where you are
-	
-	
-	function returnLocationAsIndex()
-		local currentLocation = tostring(game.Workspace:GetChildren()[13])
-	
-		if currentLocation == "017_Crossroads" then
-			return 7
-	
-		else if currentLocation == "014_GraphiteLodge" then
-				return 6
-			else if currentLocation == "013_Route4" then
-					return 5
-				else if currentLocation == "010_Route3" then
-						return 4
-					else if currentLocation == "007_Lakewood" then
-							return 3
-						else if currentLocation == "006_Route2" then
-								return 2
-							else if currentLocation == "001_Chunk" then
-									return 1
-								else if currentLocation == "011_Sewer" then
-										sewertolakewood()
-										wait(5)
-										return 3
-									else 
-										return nil
-									end
-								end
-							end
-						end
-					end
-				end
-			end
-		end
-	end
-	
-	
-	
-	-- steps from one chunk to another
-	function stepBetweenChunk(number)
-	
-		if number == 1 then
-			route1toroute2()
-	
-		else if number == 2 then
-				route2tolakewood()
-	
-			else if number == 3 then
-					lakewoodtoroute3()
-	
-				else if number == 4 then
-						route3toroute4()
-	
-					else if number == 5 then
-							route4tolodge()
-	
-	
-						else if number == 6 then
-								graphiteLodgetoCrossroads()
-	
-							end
-						end
-					end
-				end
-			end
-		end
-	
-	
-		if number == -1 then
-			route2toroute1()
-	
-		else if number == -2 then
-				lakewoodtoroute2()
-	
-			else if number == -3 then
-					route3tolakewood()
-	
-				else if number == -4 then
-						route4toroute3()
-	
-					else if number == -5 then
-							lodgetoroute4()
-	
-						else if number == -6 then
-								crossroadstoGraphiteLodge()
-	
-							end
-	
-						end
-					end
-				end
-			end
-		end
-	
-	
-	
-	
-	end
-	
-	
-	
-	
-	
-	-- takes 2 numbers as a current loaction and a desired location then recursivly travels to destination
-	function travel(current, destination) 
-		if current ~= destination and current ~= 0 then
-			stepBetweenChunk(current)
-			current = current + 1
-			travel(current,destination)
-		end
-	
-	end
-	
-	
-	
-	
-	
-	
-	
-	function main(current, destination)
-		local current = returnLocationAsIndex()
-		local destination = 5
-		noclip()
-		if current > destination then
-			current = (current - current * 2) + 1
-			destination = (destination - destination * 2) + 1
-		end
-	
-	
-	
-		travel(current, destination)
-	
-		Noclipping:Disconnect()
-		Clip = true
-	end
-	
-	script.Parent.MouseButton1Click:Connect(main)
-	
+	script.Parent.MouseButton1Click:Connect(t)
 end
-coroutine.wrap(XJUHNPD_fake_script)()
-local function WFFA_fake_script() -- LakeTeleport.LakeTP 
+coroutine.wrap(CFKFDDV_fake_script)()
+local function PCLUA_fake_script() -- LakeTeleport.LakeTP 
 	local script = Instance.new('LocalScript', LakeTeleport)
 
-	function teleport(num1, num2, num3)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(num1, num2, num3)
+	function t() 
+		TeleportTo(3)
 	end
 	
-	
-	
-	function noclip()
-		Clip = false	
-		function NoclipLoop()
-	
-	
-			if Clip == false and game:GetService("Players").LocalPlayer.Character ~= nil then
-				for _, child in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
-					if child:IsA("BasePart") and child.CanCollide == true then
-						child.CanCollide = false
-	
-					end
-				end
-			end
-		end
-		Noclipping = game:GetService('RunService').Stepped:connect(NoclipLoop)
-	end
-	
-	
-	
-	
-	function lodgetoroute4()
-		teleport(-2238.35107, 73.0546417, -229.331879)
-		wait(5)
-	end
-	
-	
-	function route4tolodge()
-		teleport(2817.52734, 189.578491, 621.564087)
-		wait(5)
-	end
-	
-	
-	function route4toroute3()
-		teleport(2524.5249, 102.8246, 995.451172)
-		wait(5)
-	end
-	
-	
-	function route3toroute4()
-		teleport(188.350845, 34.9344406, 14.34062)
-		wait(5)
-	end
-	
-	
-	function route3tolakewood()
-		teleport(-206.200073, 50.9301834, -252.539825)
-		wait(5)
-	end
-	
-	
-	function lakewoodtoroute3()
-		teleport(1198.85718, 81.6438446, 1274.23486)
-		wait(5)
-	end
-	
-	
-	function lakewoodtoroute2()
-		teleport(1403.58557, 81.6438446, 903.152283)
-		wait(5)
-	end
-	
-	
-	function route2tolakewood()
-		teleport(640.05011, 53.1003838, 1460.92346)
-		wait(5)
-	end
-	
-	
-	function route2toroute1()
-		teleport(753.899963, 43.3784103, 1130.3385)
-		wait(5)
-	end
-	
-	
-	
-	function route1toroute2()
-		teleport(909.838989, -261.326843, 905.263367)
-		wait(5)
-	end
-	
-	function route1tospawn()
-		teleport(773.88330078125, -267.7674255371094, 9.078937530517578)
-	end    
-	
-	function sewertolakewood()
-		teleport(861.899353, 52.7592773, -110.893608)
-	end
-	
-	
-	function graphiteLodgetoCrossroads()
-		teleport(-2454.76196, 94.4604797, 212.354431)
-	end
-	
-	function crossroadstoGraphiteLodge()
-		teleport(-80.5257492, 156.290695, -452.24115)
-	end
-	
-	-- finds the index of where you are
-	
-	
-	function returnLocationAsIndex()
-		local currentLocation = tostring(game.Workspace:GetChildren()[13])
-	
-		if currentLocation == "017_Crossroads" then
-			return 7
-	
-		else if currentLocation == "014_GraphiteLodge" then
-				return 6
-			else if currentLocation == "013_Route4" then
-					return 5
-				else if currentLocation == "010_Route3" then
-						return 4
-					else if currentLocation == "007_Lakewood" then
-							return 3
-						else if currentLocation == "006_Route2" then
-								return 2
-							else if currentLocation == "001_Chunk" then
-									return 1
-								else if currentLocation == "011_Sewer" then
-										sewertolakewood()
-										wait(5)
-										return 3
-									else 
-										return nil
-									end
-								end
-							end
-						end
-					end
-				end
-			end
-		end
-	end
-	
-	
-	
-	-- steps from one chunk to another
-	function stepBetweenChunk(number)
-	
-		if number == 1 then
-			route1toroute2()
-	
-		else if number == 2 then
-				route2tolakewood()
-	
-			else if number == 3 then
-					lakewoodtoroute3()
-	
-				else if number == 4 then
-						route3toroute4()
-	
-					else if number == 5 then
-							route4tolodge()
-	
-	
-						else if number == 6 then
-								graphiteLodgetoCrossroads()
-	
-							end
-						end
-					end
-				end
-			end
-		end
-	
-	
-		if number == -1 then
-			route2toroute1()
-	
-		else if number == -2 then
-				lakewoodtoroute2()
-	
-			else if number == -3 then
-					route3tolakewood()
-	
-				else if number == -4 then
-						route4toroute3()
-	
-					else if number == -5 then
-							lodgetoroute4()
-	
-						else if number == -6 then
-								crossroadstoGraphiteLodge()
-	
-							end
-	
-						end
-					end
-				end
-			end
-		end
-	
-	
-	
-	
-	end
-	
-	
-	
-	
-	
-	-- takes 2 numbers as a current loaction and a desired location then recursivly travels to destination
-	function travel(current, destination) 
-		if current ~= destination and current ~= 0 then
-			stepBetweenChunk(current)
-			current = current + 1
-			travel(current,destination)
-		end
-	
-	end
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	function main(current, destination)
-		local current = returnLocationAsIndex()
-		local destination = 3
-		noclip()
-		if current > destination then
-			current = (current - current * 2) + 1
-			destination = (destination - destination * 2) + 1
-		end
-	
-	
-	
-		travel(current, destination)
-	
-		Noclipping:Disconnect()
-		Clip = true
-	end
-	
-	script.Parent.MouseButton1Click:Connect(main)
-	
+	script.Parent.MouseButton1Click:Connect(t)
 end
-coroutine.wrap(WFFA_fake_script)()
-local function MMPXYF_fake_script() -- SewerTeleport.SewerTeleport 
+coroutine.wrap(PCLUA_fake_script)()
+local function QVWZ_fake_script() -- SewerTeleport.SewerTeleport 
 	local script = Instance.new('LocalScript', SewerTeleport)
 
-	function teleport(num1, num2, num3)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(num1, num2, num3)
-	end
-	
-	
-	
-	function noclip()
-		Clip = false	
-		function NoclipLoop()
-	
-	
-			if Clip == false and game:GetService("Players").LocalPlayer.Character ~= nil then
-				for _, child in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
-					if child:IsA("BasePart") and child.CanCollide == true then
-						child.CanCollide = false
-	
-					end
-				end
-			end
-		end
-		Noclipping = game:GetService('RunService').Stepped:connect(NoclipLoop)
-	end
-	
-	
-	
-	
-	function lodgetoroute4()
-		teleport(-2238.35107, 73.0546417, -229.331879)
-		wait(5)
-	end
-	
-	
-	function route4tolodge()
-		teleport(2817.52734, 189.578491, 621.564087)
-		wait(5)
-	end
-	
-	
-	function route4toroute3()
-		teleport(2524.5249, 102.8246, 995.451172)
-		wait(5)
-	end
-	
-	
-	function route3toroute4()
-		teleport(188.350845, 34.9344406, 14.34062)
-		wait(5)
-	end
-	
-	
-	function route3tolakewood()
-		teleport(-206.200073, 50.9301834, -252.539825)
-		wait(5)
-	end
-	
-	
-	function lakewoodtoroute3()
-		teleport(1198.85718, 81.6438446, 1274.23486)
-		wait(5)
-	end
-	
-	
-	function lakewoodtoroute2()
-		teleport(1403.58557, 81.6438446, 903.152283)
-		wait(5)
-	end
-	
-	
-	function route2tolakewood()
-		teleport(640.05011, 53.1003838, 1460.92346)
-		wait(5)
-	end
-	
-	
-	function route2toroute1()
-		teleport(753.899963, 43.3784103, 1130.3385)
-		wait(5)
-	end
-	
-	
-	
-	function route1toroute2()
-		teleport(909.838989, -261.326843, 905.263367)
-		wait(5)
-	end
-	
-	function route1tospawn()
-		teleport(773.88330078125, -267.7674255371094, 9.078937530517578)
-	end    
-	
-	function sewertolakewood()
-		teleport(861.899353, 52.7592773, -110.893608)
-	end
-	
-	
-	function graphiteLodgetoCrossroads()
-		teleport(-2454.76196, 94.4604797, 212.354431)
-		wait(5)
-	end
-	
-	function crossroadstoGraphiteLodge()
-		teleport(-80.5257492, 156.290695, -452.24115)
-		wait(5)
-	end
-	
-	-- finds the index of where you are
-	
-	
-	function returnLocationAsIndex()
-		local currentLocation = tostring(game.Workspace:GetChildren()[13])
-	
-		if currentLocation == "017_Crossroads" then
-			return 7
-	
-		else if currentLocation == "014_GraphiteLodge" then
-				return 6
-			else if currentLocation == "013_Route4" then
-					return 5
-				else if currentLocation == "010_Route3" then
-						return 4
-					else if currentLocation == "007_Lakewood" then
-							return 3
-						else if currentLocation == "006_Route2" then
-								return 2
-							else if currentLocation == "001_Chunk" then
-									return 1
-								else if currentLocation == "011_Sewer" then
-										sewertolakewood()
-										wait(5)
-										return 3
-									else 
-										return nil
-									end
-								end
-							end
-						end
-					end
-				end
-			end
-		end
-	end
-	
-	
-	
-	-- steps from one chunk to another
-	function stepBetweenChunk(number)
-	
-		if number == 1 then
-			route1toroute2()
-	
-		else if number == 2 then
-				route2tolakewood()
-	
-			else if number == 3 then
-					lakewoodtoroute3()
-	
-				else if number == 4 then
-						route3toroute4()
-	
-					else if number == 5 then
-							route4tolodge()
-	
-	
-						else if number == 6 then
-								graphiteLodgetoCrossroads()
-	
-							end
-						end
-					end
-				end
-			end
-		end
-	
-	
-		if number == -1 then
-			route2toroute1()
-	
-		else if number == -2 then
-				lakewoodtoroute2()
-	
-			else if number == -3 then
-					route3tolakewood()
-	
-				else if number == -4 then
-						route4toroute3()
-	
-					else if number == -5 then
-							lodgetoroute4()
-	
-						else if number == -6 then
-								crossroadstoGraphiteLodge()
-	
-							end
-	
-						end
-					end
-				end
-			end
-		end
-	
-	
-	
-	
-	end
-	
-	
-	
-	
-	
-	-- takes 2 numbers as a current loaction and a desired location then recursivly travels to destination
-	function travel(current, destination) 
-		if current ~= destination and current ~= 0 then
-			stepBetweenChunk(current)
-			current = current + 1
-			travel(current,destination)
-		end
-	
-	end
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	function main(current, destination)
-		local current = returnLocationAsIndex()
-		local destination = 3
-		noclip()
-		if current > destination then
-			current = (current - current * 2) + 1
-			destination = (destination - destination * 2) + 1
-		end
-	
-	
-	
-		travel(current, destination)
-		
+	function t() 
+		TeleportTo(3)
 		teleport(1572.95129, 82.9689331, 1274.55786)
 		wait(5)
 		teleport(1010.32141, 29.1483574, 283.841949)
-		Noclipping:Disconnect()
-		Clip = true
 	end
 	
-	script.Parent.MouseButton1Click:Connect(main)
+	script.Parent.MouseButton1Click:Connect(t)
+		
 	
 end
-coroutine.wrap(MMPXYF_fake_script)()
-local function CPUDVT_fake_script() -- GraphiteLodgeTeleport.GraphiteLodgeTP 
+coroutine.wrap(QVWZ_fake_script)()
+local function BIKP_fake_script() -- GraphiteLodgeTeleport.GraphiteLodgeTP 
 	local script = Instance.new('LocalScript', GraphiteLodgeTeleport)
 
-	function teleport(num1, num2, num3)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(num1, num2, num3)
+	function t() 
+		TeleportTo(6)
 	end
 	
-	
-	
-	function noclip()
-		Clip = false	
-		function NoclipLoop()
-	
-	
-			if Clip == false and game:GetService("Players").LocalPlayer.Character ~= nil then
-				for _, child in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
-					if child:IsA("BasePart") and child.CanCollide == true then
-						child.CanCollide = false
-	
-					end
-				end
-			end
-		end
-		Noclipping = game:GetService('RunService').Stepped:connect(NoclipLoop)
-	end
-	
-	
-	
-	
-	function lodgetoroute4()
-		teleport(-2238.35107, 73.0546417, -229.331879)
-		wait(5)
-	end
-	
-	
-	function route4tolodge()
-		teleport(2817.52734, 189.578491, 621.564087)
-		wait(5)
-	end
-	
-	
-	function route4toroute3()
-		teleport(2524.5249, 102.8246, 995.451172)
-		wait(5)
-	end
-	
-	
-	function route3toroute4()
-		teleport(188.350845, 34.9344406, 14.34062)
-		wait(5)
-	end
-	
-	
-	function route3tolakewood()
-		teleport(-206.200073, 50.9301834, -252.539825)
-		wait(5)
-	end
-	
-	
-	function lakewoodtoroute3()
-		teleport(1198.85718, 81.6438446, 1274.23486)
-		wait(5)
-	end
-	
-	
-	function lakewoodtoroute2()
-		teleport(1403.58557, 81.6438446, 903.152283)
-		wait(5)
-	end
-	
-	
-	function route2tolakewood()
-		teleport(640.05011, 53.1003838, 1460.92346)
-		wait(5)
-	end
-	
-	
-	function route2toroute1()
-		teleport(753.899963, 43.3784103, 1130.3385)
-		wait(5)
-	end
-	
-	
-	
-	function route1toroute2()
-		teleport(909.838989, -261.326843, 905.263367)
-		wait(5)
-	end
-	
-	function route1tospawn()
-		teleport(773.88330078125, -267.7674255371094, 9.078937530517578)
-	end    
-	
-	function sewertolakewood()
-		teleport(861.899353, 52.7592773, -110.893608)
-	end
-	
-	
-	function graphiteLodgetoCrossroads()
-		teleport(-2454.76196, 94.4604797, 212.354431)
-		wait(5)
-	end
-	
-	function crossroadstoGraphiteLodge()
-		teleport(-80.5257492, 156.290695, -452.24115)
-		wait(5)
-	end
-	
-	-- finds the index of where you are
-	
-	
-	function returnLocationAsIndex()
-		local currentLocation = tostring(game.Workspace:GetChildren()[13])
-	
-		if currentLocation == "017_Crossroads" then
-			return 7
-	
-		else if currentLocation == "014_GraphiteLodge" then
-				return 6
-			else if currentLocation == "013_Route4" then
-					return 5
-				else if currentLocation == "010_Route3" then
-						return 4
-					else if currentLocation == "007_Lakewood" then
-							return 3
-						else if currentLocation == "006_Route2" then
-								return 2
-							else if currentLocation == "001_Chunk" then
-									return 1
-								else if currentLocation == "011_Sewer" then
-										sewertolakewood()
-										wait(5)
-										return 3
-									else 
-										return nil
-									end
-								end
-							end
-						end
-					end
-				end
-			end
-		end
-	end
-	
-	
-	
-	-- steps from one chunk to another
-	function stepBetweenChunk(number)
-	
-		if number == 1 then
-			route1toroute2()
-	
-		else if number == 2 then
-				route2tolakewood()
-	
-			else if number == 3 then
-					lakewoodtoroute3()
-	
-				else if number == 4 then
-						route3toroute4()
-	
-					else if number == 5 then
-							route4tolodge()
-	
-	
-						else if number == 6 then
-								graphiteLodgetoCrossroads()
-	
-							end
-						end
-					end
-				end
-			end
-		end
-	
-	
-		if number == -1 then
-			route2toroute1()
-	
-		else if number == -2 then
-				lakewoodtoroute2()
-	
-			else if number == -3 then
-					route3tolakewood()
-	
-				else if number == -4 then
-						route4toroute3()
-	
-					else if number == -5 then
-							lodgetoroute4()
-	
-						else if number == -6 then
-								crossroadstoGraphiteLodge()
-	
-							end
-	
-						end
-					end
-				end
-			end
-		end
-	
-	
-	
-	
-	end
-	
-	
-	
-	
-	
-	-- takes 2 numbers as a current loaction and a desired location then recursivly travels to destination
-	function travel(current, destination) 
-		if current ~= destination and current ~= 0 then
-			stepBetweenChunk(current)
-			current = current + 1
-			travel(current,destination)
-		end
-	
-	end
-	
-	
-	
-	
-	function main()
-		local current = returnLocationAsIndex()
-		local destination = 6
-		noclip()
-		
-		if current > destination then
-			current = (current - current * 2) + 1
-			destination = (destination - destination * 2) + 1
-		end
-	
-	
-	
-		travel(current, destination)
-	
-		Noclipping:Disconnect()
-		Clip = true
-	end
-	
-	script.Parent.MouseButton1Click:Connect(main)
-	
+	script.Parent.MouseButton1Click:Connect(t)
 end
-coroutine.wrap(CPUDVT_fake_script)()
-local function SSQUAEP_fake_script() -- Route1Teleport.R1TP 
+coroutine.wrap(BIKP_fake_script)()
+local function QHKQDM_fake_script() -- Route1Teleport.R1TP 
 	local script = Instance.new('LocalScript', Route1Teleport)
 
-	function teleport(num1, num2, num3)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(num1, num2, num3)
+	function t() 
+		TeleportTo(1)
 	end
 	
-	
-	
-	function noclip()
-		Clip = false	
-		function NoclipLoop()
-	
-	
-			if Clip == false and game:GetService("Players").LocalPlayer.Character ~= nil then
-				for _, child in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
-					if child:IsA("BasePart") and child.CanCollide == true then
-						child.CanCollide = false
-	
-					end
-				end
-			end
-		end
-		Noclipping = game:GetService('RunService').Stepped:connect(NoclipLoop)
-	end
-	
-	
-	
-	
-	function lodgetoroute4()
-		teleport(-2238.35107, 73.0546417, -229.331879)
-		wait(5)
-	end
-	
-	
-	function route4tolodge()
-		teleport(2817.52734, 189.578491, 621.564087)
-		wait(5)
-	end
-	
-	
-	function route4toroute3()
-		teleport(2524.5249, 102.8246, 995.451172)
-		wait(5)
-	end
-	
-	
-	function route3toroute4()
-		teleport(188.350845, 34.9344406, 14.34062)
-		wait(5)
-	end
-	
-	
-	function route3tolakewood()
-		teleport(-206.200073, 50.9301834, -252.539825)
-		wait(5)
-	end
-	
-	
-	function lakewoodtoroute3()
-		teleport(1198.85718, 81.6438446, 1274.23486)
-		wait(5)
-	end
-	
-	
-	function lakewoodtoroute2()
-		teleport(1403.58557, 81.6438446, 903.152283)
-		wait(5)
-	end
-	
-	
-	function route2tolakewood()
-		teleport(640.05011, 53.1003838, 1460.92346)
-		wait(5)
-	end
-	
-	
-	function route2toroute1()
-		teleport(753.899963, 43.3784103, 1130.3385)
-		wait(5)
-	end
-	
-	
-	
-	function route1toroute2()
-		teleport(909.838989, -261.326843, 905.263367)
-		wait(5)
-	end
-	
-	function route1tospawn()
-		teleport(773.88330078125, -267.7674255371094, 9.078937530517578)
-	end    
-	
-	function sewertolakewood()
-		teleport(861.899353, 52.7592773, -110.893608)
-	end
-	
-	
-	function graphiteLodgetoCrossroads()
-		teleport(-2454.76196, 94.4604797, 212.354431)
-		wait(5)
-	end
-	
-	function crossroadstoGraphiteLodge()
-		teleport(-80.5257492, 156.290695, -452.24115)
-		wait(5)
-	end
-	
-	-- finds the index of where you are
-	
-	
-	function returnLocationAsIndex()
-		local currentLocation = tostring(game.Workspace:GetChildren()[13])
-	
-		if currentLocation == "017_Crossroads" then
-			return 7
-	
-		else if currentLocation == "014_GraphiteLodge" then
-				return 6
-			else if currentLocation == "013_Route4" then
-					return 5
-				else if currentLocation == "010_Route3" then
-						return 4
-					else if currentLocation == "007_Lakewood" then
-							return 3
-						else if currentLocation == "006_Route2" then
-								return 2
-							else if currentLocation == "001_Chunk" then
-									return 1
-								else if currentLocation == "011_Sewer" then
-										sewertolakewood()
-										wait(5)
-										return 3
-									else 
-										return nil
-									end
-								end
-							end
-						end
-					end
-				end
-			end
-		end
-	end
-	
-	
-	
-	-- steps from one chunk to another
-	function stepBetweenChunk(number)
-	
-		if number == 1 then
-			route1toroute2()
-	
-		else if number == 2 then
-				route2tolakewood()
-	
-			else if number == 3 then
-					lakewoodtoroute3()
-	
-				else if number == 4 then
-						route3toroute4()
-	
-					else if number == 5 then
-							route4tolodge()
-	
-	
-						else if number == 6 then
-								graphiteLodgetoCrossroads()
-	
-							end
-						end
-					end
-				end
-			end
-		end
-	
-	
-		if number == -1 then
-			route2toroute1()
-	
-		else if number == -2 then
-				lakewoodtoroute2()
-	
-			else if number == -3 then
-					route3tolakewood()
-	
-				else if number == -4 then
-						route4toroute3()
-	
-					else if number == -5 then
-							lodgetoroute4()
-	
-						else if number == -6 then
-								crossroadstoGraphiteLodge()
-	
-							end
-	
-						end
-					end
-				end
-			end
-		end
-	
-	
-	
-	
-	end
-	
-	
-	
-	
-	
-	-- takes 2 numbers as a current loaction and a desired location then recursivly travels to destination
-	function travel(current, destination) 
-		if current ~= destination and current ~= 0 then
-			stepBetweenChunk(current)
-			current = current + 1
-			travel(current,destination)
-		end
-	
-	end
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	function main(current, destination)
-		local current = returnLocationAsIndex()
-		local destination = 1
-		noclip()
-		if current > destination then
-			current = (current - current * 2) + 1
-			destination = (destination - destination * 2) + 1
-		end
-	
-	
-	
-		travel(current, destination)
-	
-		Noclipping:Disconnect()
-		Clip = true
-	end
-	
-	script.Parent.MouseButton1Click:Connect(main)
-	
+	script.Parent.MouseButton1Click:Connect(t)
 end
-coroutine.wrap(SSQUAEP_fake_script)()
-local function CTBYH_fake_script() -- CrossRoadsTeleport.CrossroadsTP 
+coroutine.wrap(QHKQDM_fake_script)()
+local function YSMVMP_fake_script() -- CrossRoadsTeleport.CrossroadsTP 
 	local script = Instance.new('LocalScript', CrossRoadsTeleport)
+
+	function t() 
+		TeleportTo(7)
+	end
+	
+	script.Parent.MouseButton1Click:Connect(t)
+end
+coroutine.wrap(YSMVMP_fake_script)()
+local function VEXFP_fake_script() -- CrystalCavernTeleport.CrystalCavernTP 
+	local script = Instance.new('LocalScript', CrystalCavernTeleport)
+
+	function t() 
+		TeleportTo(8)
+	end
+	
+	script.Parent.MouseButton1Click:Connect(t)
+end
+coroutine.wrap(VEXFP_fake_script)()
+local function CLILFO_fake_script() -- TeleportScripts.MainTeleportScript 
+	local script = Instance.new('LocalScript', TeleportScripts)
 
 	function teleport(num1, num2, num3)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(num1, num2, num3)
@@ -3040,33 +1215,46 @@ local function CTBYH_fake_script() -- CrossRoadsTeleport.CrossroadsTP
 		wait(5)
 	end
 	
+	function CrossroadstoCrystalCavern()
+		teleport(-22.9719048, 179.397156, -787.399048)
+		wait(5)
+	end
+	
+	function CrystalCaverntoCrossroads()
+		teleport(-670.349792, 162.554779, -783.484985)
+		wait(5)
+	end
+	
 	-- finds the index of where you are
 	
 	
 	function returnLocationAsIndex()
 		local currentLocation = tostring(game.Workspace:GetChildren()[13])
+		if currentLocation == "018_CrystalCaverns" then
+			return 8
 	
-		if currentLocation == "017_Crossroads" then
-			return 7
+			else if currentLocation == "017_Crossroads" then
+				return 7
 	
-		else if currentLocation == "014_GraphiteLodge" then
-				return 6
-			else if currentLocation == "013_Route4" then
-					return 5
-				else if currentLocation == "010_Route3" then
-						return 4
-					else if currentLocation == "007_Lakewood" then
-							return 3
-						else if currentLocation == "006_Route2" then
-								return 2
-							else if currentLocation == "001_Chunk" then
-									return 1
-								else if currentLocation == "011_Sewer" then
-										sewertolakewood()
-										wait(5)
-										return 3
-									else 
-										return nil
+			else if currentLocation == "014_GraphiteLodge" then
+					return 6
+				else if currentLocation == "013_Route4" then
+						return 5
+					else if currentLocation == "010_Route3" then
+							return 4
+						else if currentLocation == "007_Lakewood" then
+								return 3
+							else if currentLocation == "006_Route2" then
+									return 2
+								else if currentLocation == "001_Chunk" then
+										return 1
+									else if currentLocation == "011_Sewer" then
+											sewertolakewood()
+											wait(5)
+											return 3
+										else 
+											return nil
+										end
 									end
 								end
 							end
@@ -3100,6 +1288,11 @@ local function CTBYH_fake_script() -- CrossRoadsTeleport.CrossroadsTP
 	
 						else if number == 6 then
 								graphiteLodgetoCrossroads()
+								
+							else if number == 7 then
+									CrossroadstoCrystalCavern()
+	
+								end
 	
 							end
 						end
@@ -3126,7 +1319,11 @@ local function CTBYH_fake_script() -- CrossRoadsTeleport.CrossroadsTP
 	
 						else if number == -6 then
 								crossroadstoGraphiteLodge()
+								
+							else if number == -7 then
+									 CrystalCaverntoCrossroads()
 	
+								end
 							end
 	
 						end
@@ -3161,11 +1358,11 @@ local function CTBYH_fake_script() -- CrossRoadsTeleport.CrossroadsTP
 	
 	
 	
-	function main()
+	function TeleportTo(d)
 		local current = returnLocationAsIndex()
-		local destination = 7
+		local destination = d
 		noclip()
-		
+	
 		if current > destination then
 			current = (current - current * 2) + 1
 			destination = (destination - destination * 2) + 1
@@ -3179,11 +1376,11 @@ local function CTBYH_fake_script() -- CrossRoadsTeleport.CrossroadsTP
 		Clip = true
 	end
 	
-	script.Parent.MouseButton1Click:Connect(main)
+	
 	
 end
-coroutine.wrap(CTBYH_fake_script)()
-local function EJID_fake_script() -- TeleportButton.OpenTeleporterScript 
+coroutine.wrap(CLILFO_fake_script)()
+local function PHMRLR_fake_script() -- TeleportButton.OpenTeleporterScript 
 	local script = Instance.new('LocalScript', TeleportButton)
 
 	function change3()
@@ -3207,8 +1404,8 @@ local function EJID_fake_script() -- TeleportButton.OpenTeleporterScript
 	
 	script.Parent.MouseButton1Click:Connect(change3)
 end
-coroutine.wrap(EJID_fake_script)()
-local function ZIMDGAV_fake_script() -- ScreenGui.Draggable Frame 
+coroutine.wrap(PHMRLR_fake_script)()
+local function ALWIQAN_fake_script() -- ScreenGui.Draggable Frame 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	frame = script.Parent.Frame
@@ -3216,12 +1413,12 @@ local function ZIMDGAV_fake_script() -- ScreenGui.Draggable Frame
 	frame.Active = true
 	frame.Selectable = true
 end
-coroutine.wrap(ZIMDGAV_fake_script)()
-local function CPXUY_fake_script() -- ScreenGui.Check Game Version 
+coroutine.wrap(ALWIQAN_fake_script)()
+local function KJYFI_fake_script() -- ScreenGui.Check Game Version 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	function checkVersion() 
-	if (tostring(game.Players.LocalPlayer.PlayerGui.Version.Version.Text) ~= "v0.1.9E")
+	if (tostring(game.Players.LocalPlayer.PlayerGui.Version.Version.Text) ~= "v0.1.2g")
 	then
 		script.Parent.Frame.TextLabel.Text = "Game Version Updated! Be careful not to get banned."
 		end
@@ -3229,8 +1426,8 @@ local function CPXUY_fake_script() -- ScreenGui.Check Game Version
 	checkVersion()
 	
 end
-coroutine.wrap(CPXUY_fake_script)()
-local function SEISP_fake_script() -- ScreenGui.NoclipScript 
+coroutine.wrap(KJYFI_fake_script)()
+local function VWHFT_fake_script() -- ScreenGui.NoclipScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	
@@ -3274,8 +1471,8 @@ local function SEISP_fake_script() -- ScreenGui.NoclipScript
 	
 	
 end
-coroutine.wrap(SEISP_fake_script)()
-local function CQLDEL_fake_script() -- ScreenGui.FlyScript 
+coroutine.wrap(VWHFT_fake_script)()
+local function TKPI_fake_script() -- ScreenGui.FlyScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	
@@ -3402,4 +1599,4 @@ local function CQLDEL_fake_script() -- ScreenGui.FlyScript
 	
 	
 end
-coroutine.wrap(CQLDEL_fake_script)()
+coroutine.wrap(TKPI_fake_script)()
