@@ -532,8 +532,8 @@ local function VEWRIFY_fake_script() -- AllChestsButton.AllChestScript
 	local script = Instance.new('LocalScript', AllChestsButton)
 
 	function Chests()
-		for i = 1, #(game.Workspace:GetChildren()[14].Chests:GetChildren()) do
-			game.Workspace:GetChildren()[14].Chests:GetChildren()[i].Helper.CFrame = game.Workspace.TargetFilter:GetChildren()[2].HumanoidRootPart.CFrame
+		for i = 1, #(game.Workspace:GetChildren()[13].Chests:GetChildren()) do
+			game.Workspace:GetChildren()[13].Chests:GetChildren()[i].Helper.CFrame = game.Workspace.TargetFilter:GetChildren()[2].HumanoidRootPart.CFrame
 			wait(2)
 			mouse1click()
 			wait(1)
@@ -569,13 +569,13 @@ local function QOLCYP_fake_script() -- GemChests.GemChestScript
 
 	function Chests2()
 		
-			local currentLocation = tostring(game.Workspace:GetChildren()[14])
+			local currentLocation = tostring(game.Workspace:GetChildren()[13])
 	
 			if currentLocation == "001_Chunk" then
-			game.Workspace:GetChildren()[14].Chests:GetChildren()[3].Helper.CFrame = game.Workspace.TargetFilter:GetChildren()[2].HumanoidRootPart.CFrame
+			game.Workspace:GetChildren()[13].Chests:GetChildren()[3].Helper.CFrame = game.Workspace.TargetFilter:GetChildren()[2].HumanoidRootPart.CFrame
 			
 		else if currentLocation == "014_GraphiteLodge" then
-				game.Workspace:GetChildren()[14].Chests:GetChildren()[2].Helper.CFrame = game.Workspace.TargetFilter:GetChildren()[2].HumanoidRootPart.CFrame
+				game.Workspace:GetChildren()[13].Chests:GetChildren()[2].Helper.CFrame = game.Workspace.TargetFilter:GetChildren()[2].HumanoidRootPart.CFrame
 			end
 		end
 	end
